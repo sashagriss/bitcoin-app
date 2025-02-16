@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "5db03c9f-141d-4f24-90e7-a1c6fc33db55",
+      "username": "sasha",
+      "email": "sasha@gmail",
+      "password": "$2b$10$v3z2y96CqTNjzIrj0bZNxOZpGCrF2La73R1h80YM2OfhCDLfReDw."
+    },
+    {
+      "id": "bba6cb04-278a-4cad-8cec-c47f0b41a1c9",
+      "username": "baba",
+      "email": "baba@gmail.com",
+      "password": "$2b$10$cNlFNfl6719JDG2K3Y0Syuv.VYeJPcEzAf6GLu8KOh.0IO0eWeyHW"
+    }
+  ]
+}
