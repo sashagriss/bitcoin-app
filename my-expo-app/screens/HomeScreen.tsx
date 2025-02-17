@@ -39,13 +39,13 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <View className="flex-1 items-center justify-center bg-red-500 px-6 py-8">
-      <Text className="mb-3 text-2xl font-bold text-white">Live BITCOIN Tracker</Text>
+      <Text className="mb-3 text-2xl font-bold text-white"> BITCOIN</Text>
 
       {loading ? (
         <ActivityIndicator size="large" color="#fff" />
       ) : (
         <Text className="mb-5 text-xl font-semibold text-white">
-          BTC Rate: ${btcRate.toFixed(2) ?? 'N/A'}
+          BTC Rate now: ${btcRate.toFixed(2) ?? 'N/A'}
         </Text>
       )}
 
