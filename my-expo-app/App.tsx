@@ -1,13 +1,24 @@
-import { ScreenContent } from 'components/ScreenContent';
-import { StatusBar } from 'expo-status-bar';
+// navigation/Navigation.tsx
 
-import './global.css';
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeScreen from './screens/HomeScreen';
+import LoginScreen from './screens/LoginScreen';
+import SignInScreen from './screens/SignupScreen';
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const Navigation = () => {
   return (
-    <>
-      <ScreenContent title="Home" path="App.tsx" />
-      <StatusBar style="auto" />
-    </>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="SignIn" component={SignInScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default Navigation;
