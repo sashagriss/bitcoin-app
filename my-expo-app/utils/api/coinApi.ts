@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_COIN } from "@react-native-dotenv";
+// import { API_COIN } from "@react-native-dotenv";
 
 export const fetchCoins = async () => {
     try {
@@ -15,7 +15,8 @@ export const fetchCoins = async () => {
             }, 
             {
                 headers: {
-                    "x-api-key": API_COIN  // Use API key from env
+                    "x-api-key": 
+                    // API_COIN 
                 },
             }
         );

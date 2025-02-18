@@ -39,13 +39,6 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <View className="flex-1 items-center justify-center bg-gray-200 p-6">
-      <View className="mb-6 h-16 w-16">
-        <WebView
-          source={require('./../assets/images/bitcoinGif.gif')}
-          style={{ width: '100%', height: '100%' }}
-        />
-      </View>
-
       <Text className="mb-6 text-2xl font-bold text-gray-900">Login</Text>
 
       <TextInput
